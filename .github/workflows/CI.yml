@@ -35,7 +35,7 @@ jobs:
           path: dist
   deploy:
     needs: build
-    runs-on: ubantu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get build artifacts from previous step
         uses: actions/download-artifact@v4
